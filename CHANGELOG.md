@@ -26,7 +26,8 @@ Types of changes (Stanzas):
 "Improvements" for changes in existing functionality.
 "Deprecated" for soon-to-be removed features.
 "Bug Fixes" for any bug fixes.
-"Breaking" for breaking API changes.
+"Client Breaking" for breaking CLI commands and REST routes.
+"State Machine Breaking" for breaking the AppState
 
 Ref: https://keepachangelog.com/en/1.0.0/
 -->
@@ -34,6 +35,13 @@ Ref: https://keepachangelog.com/en/1.0.0/
 # Changelog
 
 ## [Unreleased]
+
+### Features
+
+* (gaiad) [\#119](https://github.com/cosmos/gaia/pull/119) Add support for the `--inter-block-cache` CLI
+flag and configuration.
+* (gaiacli) [\#132](https://github.com/cosmos/gaia/pull/132) Add `tx decode` command to decode
+Base64 encoded transactions.
 
 ## [v2.0.2] - 2019-10-12
 
@@ -61,7 +69,7 @@ configuration.
 * [\#104](https://github.com/cosmos/gaia/issues/104) Fix `ModuleAccountAddrs` to
 not rely on the `x/supply` keeper to get module account addresses for blacklisting.
 
-### Breaking Changes
+### State Machine Breaking Changes
 
 * (sdk) Update SDK version to v0.37.0
 
