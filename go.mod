@@ -3,7 +3,7 @@ module github.com/cosmos/gaia
 go 1.13
 
 require (
-	github.com/btcsuite/btcd v0.0.0-20190807005414-4063feeff79a // indirect
+	github.com/btcsuite/btcd v0.0.0-20190807005414-4063feeff79a
 	github.com/cosmos/cosmos-sdk v0.0.0
 	github.com/cosmos/go-bip39 v0.0.0-20180819234021-555e2067c45d // indirect
 	github.com/golang/mock v1.3.1 // indirect
@@ -29,4 +29,4 @@ require (
 )
 
 // this is the latest commit on regen-network/upgrade-module branch
-replace github.com/cosmos/cosmos-sdk => github.com/regen-network/cosmos-sdk v0.25.1-0.20191024145644-9652ec5a504c
+replace github.com/cosmos/cosmos-sdk => github.com/sahith-narahari/cosmos-sdk v0.25.1-0.20191031164055-5ef505ad75f9
